@@ -1,0 +1,41 @@
+﻿@model Contatos_NetCore.Models.Acesso
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <form method="post" asp-controller="Acesso" asp-action="Login">
+
+        <table style="border:ridge">
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input asp-for="Email" /> <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input asp-for="Senha" /><br />
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit" value="Login" />
+        <br />
+
+
+    </form>
+</body>
+</html>

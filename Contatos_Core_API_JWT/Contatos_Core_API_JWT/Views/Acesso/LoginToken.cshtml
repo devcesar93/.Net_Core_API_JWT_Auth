@@ -1,0 +1,29 @@
+﻿@using Contatos_NetCore.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoginToken</title>
+</head>
+<body>
+    <div>
+        <h3>Token JWT</h3>
+
+        <h4> Código: </h4>
+        <div style="width:300px; height:300px; border:medium">
+            <p>
+                <textarea id="token" name="token" rows="5" cols="50">
+                        @ViewData["Token"]
+                </textarea>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
