@@ -45,7 +45,7 @@ namespace Contatos_NetCore.Controllers
             };
 
             //gera o token baseado nas claims
-            SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("senhasupersecretaparaauth"));
+            SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("supersecretpassword"));
             SigningCredentials signingCredential = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
             JwtHeader jwtHeader = new JwtHeader(signingCredential);
             JwtPayload jwtPayload = new JwtPayload(claims);
